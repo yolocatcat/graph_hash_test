@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import $ from 'jquery';
+import anime from 'animejs';
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use($);
+app.use(anime)
+app.mount('#app');
+
